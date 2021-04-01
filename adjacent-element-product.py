@@ -41,15 +41,9 @@ def adjacentElementsProduct(inputArray):
     largest_product = inputArray[-1] * inputArray[-2]
 
     for i in range((len(inputArray)-1)):
-        # print(range((len(inputArray)-1)))
         new_product = inputArray[i] * inputArray[i+1]
-        # print(new_product)
         if largest_product > new_product:
-            print(f'largest = {largest_product}')
-            print(f'new = {new_product}')
         if new_product > largest_product:
-            print(f'largest = {largest_product}')
-            print(f'new = {new_product}')
             largest_product = new_product
 
     return largest_product
