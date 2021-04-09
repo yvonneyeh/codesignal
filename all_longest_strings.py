@@ -1,3 +1,5 @@
+# Given an array of strings, return another array containing all of its longest strings.
+
 def allLongestStrings(inputArray):
 
     # longest variable to keep track of current longest, start with none
